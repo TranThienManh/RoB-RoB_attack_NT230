@@ -1,0 +1,6 @@
+Nguyên nhân tiềm tàng:
+Lỗi trong vòng lặp duyệt file: Có thể một số file không được liệt kê đúng cách do lỗi trong việc sử dụng directoryHandle.values() hoặc do quyền truy cập bị từ chối.
+File bị bỏ qua do điều kiện kiểm tra: Điều kiện processedFiles.has(fullPath) || entry.name.endsWith('.bak') có thể đang bỏ qua một số file không mong muốn.
+Lỗi quyền truy cập: Nếu người dùng không cấp đủ quyền đọc/ghi cho một số file hoặc thư mục con, quá trình sao lưu có thể thất bại âm thầm.
+Thư mục không chứa các file khác: Có thể thư mục rob_victimv1 chỉ có hai file, hoặc các file khác có định dạng không được xử lý đúng.
+Lỗi không được xử lý đầy đủ: Mặc dù mã có xử lý lỗi bằng `try-catchсию

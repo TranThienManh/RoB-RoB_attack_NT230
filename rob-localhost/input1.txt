@@ -1,0 +1,3 @@
+System: Để đảm bảo rằng tất cả các file trong thư mục được chọn (rob_victimv1) được tạo bản sao lưu với đuôi .bak, 
+bạn cần kiểm tra và chỉnh sửa mã nguồn hooking.js để đảm bảo rằng hàm createBackupsForDirectory xử lý đúng tất cả các file trong thư mục,
+kể cả các file trong thư mục con. Dưới đây là các bước kiểm tra và chỉnh sửa:
